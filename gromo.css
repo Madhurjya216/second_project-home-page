@@ -512,6 +512,10 @@ main h1{
     width: 20%;
 }
 
+.feature-1:hover{
+    transform: scale(108%);
+}
+
 
 button{
     background: orange;
