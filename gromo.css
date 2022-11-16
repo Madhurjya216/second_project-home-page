@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=DynaPuff:wght@400;500;600&family=Libre+Baskerville&family=Lobster&family=Mochiy+Pop+One&family=Nunito:wght@200;400;600&family=Playfair+Display&family=Poppins:wght@200;300&family=Raleway:wght@300&family=Ubuntu:wght@300;400&display=swap');
 
 * {
@@ -329,6 +328,7 @@ form #btn:active{
 
 .bg-img{
     background:  url(Images/bd-img.jpg) no-repeat;
+    width: 100%;
     height: 88vh;
     background-size: cover;
     background-position: center;
@@ -375,24 +375,31 @@ main span{
     font-family: 'poppins';
 }
 
-.main{
+/* .main{
     display: flex;
     text-align: center;
     width: 100%;
     justify-content: center;
     align-items: center;
-    /* margin-left: 5%;
-    margin-right: 5%; */
-}
+}  */
 
-.main-2{
+.main{
+    display: flex;
+    text-align: center;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+/* .main-2{
     display: flex;
     text-align: center;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
+} */
 
 .feature{
   border: 0px solid black;
@@ -403,6 +410,7 @@ main span{
   width: 23%;
   margin: 0px 20px;
   background: white;
+  margin-top: 10px;;
 }
 
 main h1{
@@ -478,6 +486,7 @@ main h1{
     text-align: center;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .categories a{
@@ -499,12 +508,12 @@ main h1{
     border-radius: 20px;
     padding: 5px;
     box-shadow: 0.5px 0.5px 8px;;
-    z-index: 100;
     margin: 0px 20px;
-    width: 30%;
+    width: 20%;
 }
 
-.feature-1 button{
+
+button{
     background: orange;
     color: white;
     padding: 5px;
@@ -536,34 +545,25 @@ main h1{
     margin-bottom: 16px;
     margin-top: 30px;
     color: orange;
-    margin-left: 50%;
+    margin-left: 47%;
 }
 
 #h3{
     font-size: 30px;;
     margin-bottom: 20px;
     color: white;
-    margin-left: 61%;
+    margin-left: 60%;
 
 }
 
-.discount a #btn{
-    padding: 9px 18px;
-    background: orange;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    font-size: 15px;;
-    cursor: pointer;
+.discount a #btn-2{
     position: absolute;
-    left: 61%;
-    transition: 0.5s ease;
-    font-family: 'poppins';
+    left: 60%;
 }
 
-.discount a #btn:hover{
+/* .discount a #btn-2:hover{
     background: orangered;
-}
+} */
 
 
 
@@ -573,10 +573,28 @@ main h1{
     font-family: 'poppins';
 }
 
-.p-img{
-    height: 180px;
-    width: 150px;;
+.product-slide{
+    display: flex;
+    /* margin-left: 10px; */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    /* flex-wrap: wrap; */
 }
+
+.product-slide2{
+    display: flex;
+    text-align: center;
+    /* margin-left: 70px; */
+    justify-content: center;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+/* .p-img{
+    height: 150px;
+    width: 150px;;
+} */
 
 .feature-2 img{
     width: 100%;
@@ -589,11 +607,10 @@ main h1{
     border-radius: 15px;;
     padding: 10px;
     box-shadow: 0.5px 0.5px 8px;;
-    /* width: 20%; */
-}
-
-.swiper-slide{
-    width: 20%;
+    margin: 20px;
+    width: 250px;
+    z-index: 100;
+    background: white;
 }
 
 .feature-2 button{
@@ -610,22 +627,6 @@ main h1{
     font-size: 15px;
 }
 
-.product-slide{
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.product-size{
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-.product-size2{
-    margin-right: 0%;
-    margin-left: 0%;
-}
-
 .p-img{
     height: 200px;
 }
@@ -639,31 +640,81 @@ main h1{
     width: 200px;
 }
 
+.bg{
+    background: url(https://img.freepik.com/premium-vector/hand-drawn-doodle-vegetable-collection_24595-250.jpg?w=2000), no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 274vh;
+    opacity: 0.3;
+    position: absolute;
+    top: 380%;
+}
+
+.para-hd{
+    text-align: center;
+    color: purple;
+    font-size: 20px;
+    font-family: 'poppins';
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: white;;
+}
+
 
 /* =============================== Customer Reviews =================================== */
 
 #reviews span{
     font-family: 'poppins';
+    z-index: 100;
 }
 
 #reviews{
     margin-top: 15px;
+    z-index: 100;
 }
 
 .r-img{
     border-radius: 50%;
 }
 
-.review-slide{
+.reviews{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.feature-2 p i{
+.reviews-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-3 p i{
     margin-top: 10px;
+}
+
+.feature-3 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.feature-3{
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 15px;;
+    padding: 10px;
+    box-shadow: 0.5px 0.5px 8px;;
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+    z-index: 100;
+    background: white;
 }
 
 .fa-star{
     color: gold;
+    margin-bottom: 10px;
 }
 
 
@@ -676,6 +727,7 @@ main h1{
 .contact-flex{
     display: flex;;
     margin: 0;
+    justify-content: center;
 }
 
 #contact{
@@ -695,6 +747,7 @@ main h1{
     box-shadow: 0.5px 0.5px 8px purple;
     margin-left: 5px;
     margin: none;;
+    /* background: none; */
 }
 
 .contact-form h2{
@@ -858,13 +911,34 @@ footer h3{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: orangered;
+    background: orangered; 
     border-radius: 3px;
 }
 
 
 
 
+/* =============================== Coupon code =================================== */
+
+
+
+/* .box{
+    width: 400px;
+    height: 280px;
+    background: grey;
+    margin-left: -65%;
+    position: absolute;
+    z-index: 100;
+    margin-top: 150px;
+    background: url(https://img.freepik.com/premium-psd/vegetable-grocery-delivery-promotion-web-banner-facebook-cover-instagram-template_502896-109.jpg?size=626&ext=jpg&uid=R81204783&ga=GA1.2.1145224334.1665120416&semt=sph), no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box button{
+    margin-left: 92.5%;
+    padding: 5px 10px;;
+} */
 
 
 
@@ -883,97 +957,93 @@ footer h3{
 
 
 
-/* ======================== Media quiries ============================ */
 
 
+/* ========================== Media queries ============================= */
 
-@media (max-width: 750px) {
 
-    /* <!-- ================= Nav bar part ==================== --> */
+/* @media(max-width: 900px){
 
-    .navbar{
-        justify-content: space-between;
-    }
-
-    .navbar a img{
-        width: 100px;;
-    }
-
-    .nav a li{
-        display: none;
-    }
-
-    .heading{
-        padding-top: 50%;
+    .nav ul li{
+        font-size: 15px;;
+        padding: 5px;
+        display: none
     }
 
     #hd{
+        font-size: 30px;;
+    }
+
+    .hd{
+        font-size: 20px;;
+    }
+
+    .heading{
+        align-items: center;
+    }
+
+    .feature{
+        width: 30%;
+    }
+
+    .categories{
+        display: block;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-gap: 30px;
+    } 
+
+    .contact-flex{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-hd{
+        margin-top: 20px;
+    }
+
+} */
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    html{
+        margin: 0px;
+    }
+    .nav ul li{
+        display: none;
+    }
+
+    #hd{
+        font-size: 20px;;
+    }
+
+    .hd{
         font-size: 15px;;
     }
-
-    .icons i{
-        font-size: 20px;
-    }
-
-    /* .icons{
-        margin-right: 40%;;
-    } */
-
-    .icons .fa-user{
-        font-size: 20px;
-    }
-
-    /* <!-- ================= Main part ==================== --> */
-    
-    /* <!-- ================= Feature part ==================== --> */
-    
 
     .main{
         flex-direction: column;
     }
-    
+
     .feature{
-        width: 60%;
-        margin-bottom: 30px;
-    }
-
-    #service{
-        margin-left: 20%;
-        margin-right: 20%;
-        font-size: 25px;;
-    }
-    
-    .feature button{
-        padding-bottom: 30px;
-    }
-    
-    .design1{
-        position: absolute;
-        left: 20%;
-        top: 115%;
-    }
-    
-    .design2{
-        position: absolute;
-        left: 50%;
-        top: 160%;
-        overflow-x: hidden !important;
-    }
-    
-    .design3{
-        position: absolute;
-        left: 30%;
-        top: 225%;
-        overflow-x: hidden !important;
-    }
-
-
-    /* <!-- ================= Categories part ==================== --> */
-
-    #categories{
-        margin-left: 20%;
-        margin-right: 20%;
-        font-size: 25px;;
+        width: 300px;
     }
 
     .categories{
@@ -981,65 +1051,83 @@ footer h3{
     }
 
     .feature-1{
-        width: 50%;
-        margin-bottom: 30px;
+        width: 250px;
+        margin-top: 10px;
     }
 
-    .c-img{
-        height: 250px;
+    .product-slide{
+        flex-direction: column;
+        text-align: center;
     }
 
-    .feature-1 button{
-        padding-bottom: 30px;
+    .product-slide2{
+        flex-direction: column;
+        text-align: center;
     }
 
-
-    /* <!-- ================= Product part ==================== --> */
-
-    #products{
-        margin-left: 20%;
-        margin-right: 20%;
-        font-size: 25px;;
+    .reviews{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 25%;
     }
 
-    .product-size{
-        margin-right: 23%;
-        margin-left: 23%;
+    .reviews-2{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 25%;
     }
-
-    .feature-2{
-        width: 100% !important;
-        height: 500px !important;
-    }
-
-    .p-img{
-        height: 22vh !important;
-    }
-
-
-    /* <!-- ========================= Reviews part =========================== --> */
-
-
-    #reviews{
-        font-size: 25px;;
-    }
-
-    #contact{
-        font-size: 25px;;
-    }
-
 
     .contact-flex{
-        flex-direction: column
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form{
+        width: 300px;
     }
 
     .map{
-        margin-left: 0px;
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 30%;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer-hd{
         margin-top: 20px;
     }
+
+    #para-last{
+        font-size: 12px;
+    }
+
+    .bubble1{
+        display: none;
+    }
+
+    .to-btn{
+        right: 20%
+    }
+
+    .text{
+        font-size: 10px;
+    }  
     
-    .contact-form{
-        width: 100%;
+    .discount{
+        z-index: 100;
+    }
+
+    .feature-2{
+        margin-left: 34%;
+    }
+
+    .heading{
+        padding-top: 500px;;
     }
 
 }
