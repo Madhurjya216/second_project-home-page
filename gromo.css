@@ -561,9 +561,9 @@ button{
     left: 60%;
 }
 
-/* .discount a #btn-2:hover{
+.discount a #btn-2:hover{
     background: orangered;
-} */
+}
 
 
 
@@ -658,7 +658,7 @@ button{
     font-family: 'poppins';
     font-weight: bold;
     margin-bottom: 10px;
-    background: white;;
+    /* background: white;; */
 }
 
 
