@@ -413,6 +413,10 @@ main span{
   margin-top: 10px;;
 }
 
+.fea{
+    margin-top: 20px;
+}
+
 main h1{
     text-align: center;
     padding-top: 70px; 
@@ -459,19 +463,19 @@ main h1{
 .design1{
     position: absolute;
     left: 2%;
-    top: 125%;
+    top: 99%;
 }
 
 .design2{
     position: absolute;
-    left: 35%;
-    top: 157%;
+    left: 28%;
+    top: 135%;
 }
 
 .design3{
     position: absolute;
     left: 76%;
-    top: 120%;
+    top: 115%;
 }
 
 /* ============================= Categories part =========================== */
